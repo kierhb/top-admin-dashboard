@@ -6,20 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="grid.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Admin Dashboard</title>
     </head>
     <body>
         <div class="container">
             <div class="header">
-                <div class="search-tab">
-                    <button id="search-btn"><i class="fa fa-search"></i></button>
-                    <input id="search-bar" type="text" id="search" name="search" placeholder="Search...">
-                    <button id="other-btn">LANG</button>
-                    <button id="other-btn">LANG</button>
-                    <img src="https://images.goodsmile.info/cgm/images/product/20190116/7984/57381/large/fa9f18e2944259a04f34c61c2129495d.jpg" alt="User Image" id="other-btn">
+                <div class="toolbar">
+                    <div class="search-tab">
+                        <button id="search-btn"><i class="fa fa-search"></i></button>
+                        <input id="search-bar" type="text" id="search" name="search" placeholder="Search...">
+                    </div>
+                    <div class="buttons">
+                        <button id="other-btn">ENG</button>
+                        <button id="other-btn"><i class="fa fa-bell"></i></button>
+                        <img src="https://images.goodsmile.info/cgm/images/product/20190116/7984/57381/large/fa9f18e2944259a04f34c61c2129495d.jpg" alt="User Image" id="other-btn">
+                    </div>
                 </div>
-
+                <div class="sec-toolbar">
+                    <h1 id="overview"><i class="material-icons" style="font-size:48px">dashboard</i>Overview</h1>
+                    <div class="button-bar">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
             </div>
             <div class="menu">
                 <div class="user-el">
