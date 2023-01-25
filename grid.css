@@ -1,0 +1,37 @@
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(225px, 1fr) 6fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header {
+    grid-column: 2 / -1;
+}
+
+.menu {
+    grid-row: 1 / -1;
+}
+
+.container > div:nth-child(3n) {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2fr 2fr;
+}
+
+.projects {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+}
+
+.announcements {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+}
+
+.trending {
+    grid-column: 2 / -1;
+    grid-row: 2 / -1
+}
