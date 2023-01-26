@@ -6,8 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="grid.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <title>Admin Dashboard</title>
     </head>
     <body>
@@ -15,17 +14,23 @@
             <div class="header">
                 <div class="toolbar">
                     <div class="search-tab">
-                        <button id="search-btn"><i class="fa fa-search"></i></button>
+                        <button id="search-btn">
+                            <span class="material-symbols-outlined" style="font-size:30px">search</span>
+                        </button>
                         <input id="search-bar" type="text" id="search" name="search" placeholder="Search...">
                     </div>
                     <div class="buttons">
                         <button id="other-btn">ENG</button>
-                        <button id="other-btn"><i class="fa fa-bell"></i></button>
+                        <button id="other-btn">
+                            <span class="material-symbols-outlined">notifications_active</span>
+                        </button>
                         <img src="https://images.goodsmile.info/cgm/images/product/20190116/7984/57381/large/fa9f18e2944259a04f34c61c2129495d.jpg" alt="User Image" id="other-btn">
                     </div>
                 </div>
                 <div class="sec-toolbar">
-                    <h1 id="overview"><i class="material-icons" style="font-size:48px">dashboard</i>Overview</h1>
+                    <h1 id="overview">
+                        <span class="material-symbols-outlined" style="font-size:40px">dashboard</span>Overview
+                    </h1>
                     <div class="button-bar">
                         <button>New</button>
                         <button>Upload</button>
@@ -82,7 +87,75 @@
                 </div>
             </div>
             <div class="content">
-                <div class="projects">PROJECTS</div>
+                <div class="projects">
+                    <div class="project-card">
+                        <h4 id="project--title">Super Cool Project</h4>
+                        <p id="project--description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                        <div id="project--toolbar">
+                            <div><span class="material-symbols-outlined" style="font-size:30px">grade</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">edit_square</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">share</span></i></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 id="project--title">Less Cool Project</h4>
+                        <p id="project--description">
+                            Leo vel fringilla est ullamcorper eget. At volutpat diam ut venenatis tellus in.
+                        </p>
+                        <div id="project--toolbar">
+                            <div><span class="material-symbols-outlined" style="font-size:30px">grade</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">edit_square</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">share</span></i></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 id="project--title">Impossible App</h4>
+                        <p id="project--description">
+                            Justo nec ultrices dui sapien. At varius vel pharetra vel turpis nunc.
+                        </p>
+                        <div id="project--toolbar">
+                            <div><span class="material-symbols-outlined" style="font-size:30px">grade</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">edit_square</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">share</span></i></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 id="project--title">Easy Peasy App</h4>
+                        <p id="project--description">
+                            Sit amet consectetur adipiscing elit ut. Vel facilisis volutpat est velit. Velit sed ullamcorper morbi tincidunt. 
+                        </p>
+                        <div id="project--toolbar">
+                            <div><span class="material-symbols-outlined" style="font-size:30px">grade</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">edit_square</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">share</span></i></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 id="project--title">Add blocker</h4>
+                        <p id="project--description">
+                            Maecenas ultricies mi eget mauris pharetra et ultrices neque. Est placerat in egestas erat imperdiet sed. 
+                        </p>
+                        <div id="project--toolbar">
+                            <div><span class="material-symbols-outlined" style="font-size:30px">grade</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">edit_square</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">share</span></i></div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4 id="project--title">Money Maker</h4>
+                        <p id="project--description">
+                            Faucibus purus in massa tempor nec. Amet dictum sit amet justo donec enim diam.    
+                        </p>
+                        <div id="project--toolbar">
+                            <div><span class="material-symbols-outlined" style="font-size:30px">grade</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">edit_square</span></div>
+                            <div><span class="material-symbols-outlined" style="font-size:30px">share</span></i></div>
+                        </div>
+                    </div>
+                    
+                </div>
                 <div class="announcements">ANNOUNCEMENTS</div>
                 <div class="trending">TRENDING</div>
             </div>

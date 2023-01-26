@@ -1,7 +1,7 @@
 .container {
     height: 100%;
     display: grid;
-    grid-template-columns: minmax(225px, 1fr) 6fr;
+    grid-template-columns: minmax(225px, 15vw) 6fr;
     grid-template-rows: 1fr 4fr;
 }
 
@@ -24,6 +24,14 @@
 .projects {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
+}
+
+.container > div:nth-child(3n) > div:nth-child(1n) {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 2fr));
 }
 
 .announcements {

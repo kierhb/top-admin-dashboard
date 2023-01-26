@@ -19,6 +19,7 @@ html, body {
     --menu-hover-background: rgba(81, 97, 114, 0.226);
     --menu-hover-color: #f1f5f9;
     --header-background-color: #f7f8fc;
+    --content-background-color: #e2e8f0;
 }
 
 .content > div {
@@ -28,100 +29,17 @@ html, body {
 }
 
 .content {
-    background-color: #88d8b0;
+    background-color: var(--content-background-color);
 }
 
-.projects {
-    background-color: #b05cff;
-}
+
 
 .announcements {
-    background-color: #5c6cff;
+    border: solid 1px #5c6cff;
 }
 
 .trending {
-    background-color: #ff5c5c;
-}
-
-/* M E N U */
-.menu {
-    background-color: var(--menu-background-color);
-    flex-flow: column wrap;
-}
-
-.user-el {
-    width: 100%;
-    padding: 20px 0;
-    border-bottom: solid 2.5px var(--button-color);
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--menu-hover-background);
-    height: 20%;
-}
-
-#user--img {
-    width: 100px;
-    height: 100px;
-    border: solid 5px var(--menu-hover-color);
-    border-radius: 50px;
-}
-
-#user--name {
-    color: var(--menu-hover-color);
-    font-size: 20px;
-    margin: 5px 0 0;
-}
-
-.sidebar-nav {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-between;
-    height: 80%;
-}
-
-.main--nav, .utility--nav {
-    padding: 0;
-}
-
-.sidebar-nav > ul {
-    list-style: none;
-}
-
-#nav---el {
-    display: flex;
-    flex-flow: row wrap;
-    height: 60px;
-    align-items: center;
-    padding: 0 35px;
-    cursor: pointer;
-}
-
-#nav---el:hover {
-    background-color: var(--menu-hover-background);
-    border-left: solid 5px var(--button-color);
-    font-weight: bold;
-    opacity: 1;
-}
-
-#nav---el:active {
-    transform: scale(0.95);
-}
-
-#nav---el > p:hover{
-    color: var(--menu-hover-color);
-}
-
-#nav---el > img{
-    height: 20px;
-    margin-right: 15px;
-    opacity: 0.5;
-}
-
-#nav---el > p{
-    font-size: 18px;
-    color: var(--menu-font-color)
+    border: solid 1px #ff5c5c;
 }
 
 /* H E A D E R */
@@ -144,7 +62,7 @@ html, body {
     height: 60px;
     border-radius: 30px;
     margin-right: 15px;
-    font-size: 20px;
+    font-size: 40px;
     font-weight: bold;
     cursor: pointer;
 }
@@ -274,4 +192,139 @@ html, body {
     box-shadow: 0px 0px 5px rgba(234, 88, 12, 0.9);
     transform: scale(0.95);
     cursor: pointer;
+}
+
+/* M E N U */
+.menu {
+    background-color: var(--menu-background-color);
+    flex-flow: column wrap;
+}
+
+.user-el {
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: solid 2.5px var(--button-color);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--menu-hover-background);
+    height: 20%;
+}
+
+#user--img {
+    width: 100px;
+    height: 100px;
+    border: solid 5px var(--menu-hover-color);
+    border-radius: 50px;
+}
+
+#user--name {
+    color: var(--menu-hover-color);
+    font-size: 20px;
+    margin: 5px 0 0;
+}
+
+.sidebar-nav {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 80%;
+}
+
+.main--nav, .utility--nav {
+    padding: 0;
+}
+
+.sidebar-nav > ul {
+    list-style: none;
+}
+
+#nav---el {
+    display: flex;
+    flex-flow: row wrap;
+    height: 60px;
+    align-items: center;
+    padding: 0 35px;
+    cursor: pointer;
+}
+
+#nav---el:hover {
+    background-color: var(--menu-hover-background);
+    border-left: solid 5px var(--button-color);
+    font-weight: bold;
+    opacity: 1;
+}
+
+#nav---el:active {
+    transform: scale(0.95);
+}
+
+#nav---el > p:hover{
+    color: var(--menu-hover-color);
+}
+
+#nav---el > img{
+    height: 20px;
+    margin-right: 15px;
+    opacity: 0.5;
+}
+
+#nav---el > p{
+    font-size: 18px;
+    color: var(--menu-font-color)
+}
+
+/* P R O J E C T S */
+.projects {
+
+}
+
+.project-card {
+    border-left: solid 10px var(--menu-font-color);
+    background-color: var(--header-background-color);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgb(81 97 114 / 25%);
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+#project--title {
+    height: 10%;
+    font-size: 20px;
+    color: rgba(81, 97, 114, 1);
+    margin: 0;
+}
+
+#project--description {
+    height: 65%;
+    margin: 15px 10px;
+    font-size: 20px;
+    color: rgba(81, 97, 114, 0.9);
+}
+
+#project--toolbar {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+}
+
+#project--toolbar > div:hover {
+    transform: scale(1.2);
+    color:rgb(234, 88, 12)
+}
+
+#project--toolbar > div:active {
+    transform: scale(1);
+    color:rgb(234, 88, 12)
 }
