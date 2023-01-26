@@ -328,3 +328,49 @@ html, body {
     transform: scale(1);
     color:rgb(234, 88, 12)
 }
+
+/* A N N O U N C E M E N T S */
+.anncmts {
+    padding: 20px 0px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.anncmts-title {
+    margin: 0 0 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    color: #15283c;
+}
+
+.anncmts-container {
+    background-color: var(--header-background-color);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: rgb(81 97 114 / 25%) 0px 0px 10px;
+}
+
+.anncmts:hover {
+    transform: scale(1.03);
+}
+
+#anncmts--title {
+    height: 10%;
+    font-size: 18px;
+    color: rgba(81, 97, 114, 1);
+    margin: 0;
+}
+
+.anncmts-content:hover {
+    transform: scale(1.03);
+}
+
+#anncmts--description {
+    margin: 2.5px 10px 5px;
+    font-size: 15px;
+    color: rgba(81, 97, 114, 0.9);
+    width: 15vw;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
