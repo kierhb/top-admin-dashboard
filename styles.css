@@ -331,9 +331,10 @@ html, body {
 
 /* A N N O U N C E M E N T S */
 .anncmts {
-    padding: 20px 0px;
+    padding: 15px 10px 0  0;
     display: flex;
     flex-flow: column wrap;
+    height: auto;
 }
 
 .anncmts-title {
@@ -357,7 +358,7 @@ html, body {
 
 #anncmts--title {
     height: 10%;
-    font-size: 18px;
+    font-size: 15px;
     color: rgba(81, 97, 114, 1);
     margin: 0;
 }
@@ -368,9 +369,6 @@ html, body {
 
 #anncmts--description {
     margin: 2.5px 10px 5px;
-    font-size: 15px;
+    font-size: 12.5px;
     color: rgba(81, 97, 114, 0.9);
-    width: 15vw;
-    overflow:hidden;
-    text-overflow:ellipsis;
 }
