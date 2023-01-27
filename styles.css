@@ -32,16 +32,6 @@ html, body {
     background-color: var(--content-background-color);
 }
 
-
-
-.announcements {
-    border: solid 1px #5c6cff;
-}
-
-.trending {
-    border: solid 1px #ff5c5c;
-}
-
 /* H E A D E R */
 .header {
     background-color: var(--header-background-color);	
@@ -331,7 +321,7 @@ html, body {
 
 /* A N N O U N C E M E N T S */
 .anncmts {
-    padding: 15px 10px 0  0;
+    padding: 0px 15px 0px  0;
     display: flex;
     flex-flow: column wrap;
     height: auto;
@@ -350,10 +340,7 @@ html, body {
     padding: 25px;
     border-radius: 10px;
     box-shadow: rgb(81 97 114 / 25%) 0px 0px 10px;
-}
-
-.anncmts:hover {
-    transform: scale(1.03);
+    width: 100%;
 }
 
 #anncmts--title {
@@ -363,8 +350,13 @@ html, body {
     margin: 0;
 }
 
-.anncmts-content:hover {
+.anncmts-content:hover, .trending-content:hover {
     transform: scale(1.03);
+    cursor: pointer;
+}
+
+.anncmts-content:active, .trending-content:active {
+    transform: scale(0.98);
 }
 
 #anncmts--description {
@@ -372,3 +364,67 @@ html, body {
     font-size: 12.5px;
     color: rgba(81, 97, 114, 0.9);
 }
+
+/* T R E N D I N G */
+.trending {
+    width: 20vw;
+    display: flex;
+    flex-flow: column wrap;
+    height: auto;
+}
+
+.trending-title {
+    width: 100%;
+    justify-content: center;
+    margin: 0 0 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    color: #15283c;
+}
+
+.trending-container {
+    width: 100%;
+    background-color: var(--header-background-color);
+    padding: 20px 35px;
+    border-radius: 10px;
+    box-shadow: rgb(81 97 114 / 25%) 0px 0px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+}
+
+.trending-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: 5% 0px ;
+}
+
+#trending--img {
+    height: 52px;
+    width: 52px;
+    border-radius: 26px;
+    box-shadow: 0px 0px 5px rgba(81, 97, 114, 0.9);
+    margin: 0 20px 0 0;
+}
+
+.trending--user {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}
+
+#trending---title {
+    height: 10%;
+    font-size: 20px;
+    color: rgba(81, 97, 114, 1);
+    margin: 0;
+}
+
+#trending---description {
+    margin: 0px 20px 0px;
+    font-size: 15px;
+    color: rgba(81, 97, 114, 0.9);
+}
+
